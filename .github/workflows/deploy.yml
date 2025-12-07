@@ -6,6 +6,9 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: write   # 👈 даём токену право пушить в репозиторий
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
